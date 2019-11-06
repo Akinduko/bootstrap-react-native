@@ -3,6 +3,15 @@ package com.gingabox;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+import com.reactnativecommunity.webview.RNCWebViewPackage;
+import com.rnfingerprint.FingerprintAuthPackage;
+import cl.json.RNSharePackage;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.oblador.keychain.KeychainPackage;
+import com.robinpowered.react.Intercom.IntercomPackage;
+import com.imagepicker.ImagePickerPackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -40,6 +49,15 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new AsyncStoragePackage(),
+            new RNCWebViewPackage(),
+            new FingerprintAuthPackage(),
+            new RNSharePackage(),
+            new LinearGradientPackage(),
+            new KeychainPackage(),
+            new IntercomPackage(),
+            new ImagePickerPackage(),
+            new SplashScreenReactPackage(),
           new ReanimatedPackage(),
           new RNGestureHandlerPackage(),
           new RNScreensPackage(),

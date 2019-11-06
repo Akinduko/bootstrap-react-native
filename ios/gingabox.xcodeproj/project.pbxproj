@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0537884F57F64B1CA234FA9E /* Intelligent Design - AvertaPE-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0F29FEF5C738477991AE3FAF /* Intelligent Design - AvertaPE-RegularItalic.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		24ECADC940774B8B8A11FAEC /* Intelligent Design - AvertaPE-ExtrathinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 904D1560A0534C68BFE18051 /* Intelligent Design - AvertaPE-ExtrathinItalic.otf */; };
+		4CE047A923AB45D5BDA46832 /* Intelligent Design - AvertaPE-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 61367E9F10504DD3AF04C9CB /* Intelligent Design - AvertaPE-Regular.otf */; };
+		5087B186044B4AADA014FC4D /* Intelligent Design - AvertaPE-ExtraboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A89C3896A56F4161BFA99C0C /* Intelligent Design - AvertaPE-ExtraboldItalic.otf */; };
+		5A0D55A593FF46FC8D067D13 /* Intelligent Design - AvertaPE-Extrathin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F913E276D3A44C9912D10BB /* Intelligent Design - AvertaPE-Extrathin.otf */; };
+		6988513A13DA4832B7D99C07 /* Intelligent Design - AvertaPE-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77E4253C0B494002B5D5BB6B /* Intelligent Design - AvertaPE-ThinItalic.otf */; };
+		7095E26CD6A44C99910FA601 /* Intelligent Design - AvertaPE-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B68DA2D7EEA443E9F669D02 /* Intelligent Design - AvertaPE-Semibold.otf */; };
+		7E7DA0B613E1490A86A392A0 /* Intelligent Design - AvertaPE-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92DBEA4F0DE14AE7BFE84B31 /* Intelligent Design - AvertaPE-BlackItalic.otf */; };
+		80B48A640E0B4A3CA381B99D /* Intelligent Design - AvertaPE-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A6269088828440B98D30AD0 /* Intelligent Design - AvertaPE-Thin.otf */; };
+		99E006910C324D68BDCA31FB /* Intelligent Design - AvertaPE-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8404C7DF0C7642B1A2E0E4D9 /* Intelligent Design - AvertaPE-SemiboldItalic.otf */; };
+		A8E329C3102F458D9A92D783 /* Intelligent Design - AvertaPE-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A2B4B8A322874E8D9A549C82 /* Intelligent Design - AvertaPE-BoldItalic.otf */; };
+		A8ED8D49B70A47F2AB44AE43 /* Intelligent Design - AvertaPE-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 913BC0B028D6478D88CF623B /* Intelligent Design - AvertaPE-Bold.otf */; };
+		ACD44CB2ED8F41B8BCBC4FC4 /* Intelligent Design - AvertaPE-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34388328C9544D62AA5E4BAD /* Intelligent Design - AvertaPE-Black.otf */; };
 		DB37598C501BD3D12C0A1A5B /* libPods-gingabox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA52EED40C5D4307BA19A817 /* libPods-gingabox.a */; };
+		DB50725EEDEE48A38FF370CE /* Intelligent Design - AvertaPE-Extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D8263D56B6E49978A2E0229 /* Intelligent Design - AvertaPE-Extrabold.otf */; };
+		F16D937AAC6C4865A9873572 /* Intelligent Design - AvertaPE-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 38AC27CE44D44E5691991638 /* Intelligent Design - AvertaPE-LightItalic.otf */; };
+		F19156D5F76346A593D50789 /* Intelligent Design - AvertaPE-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 73AE9BDF8E3D4A4480AF0D3A /* Intelligent Design - AvertaPE-Light.otf */; };
+		F655BC71237212D300DD962D /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		0B68DA2D7EEA443E9F669D02 /* Intelligent Design - AvertaPE-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-Semibold.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-Semibold.otf"; sourceTree = "<group>"; };
+		0F29FEF5C738477991AE3FAF /* Intelligent Design - AvertaPE-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-RegularItalic.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-RegularItalic.otf"; sourceTree = "<group>"; };
 		1326507C7915BED183F37004 /* Pods-gingabox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gingabox.debug.xcconfig"; path = "Target Support Files/Pods-gingabox/Pods-gingabox.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* gingabox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gingabox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = gingabox/AppDelegate.h; sourceTree = "<group>"; };
@@ -25,6 +44,20 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = gingabox/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = gingabox/main.m; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		34388328C9544D62AA5E4BAD /* Intelligent Design - AvertaPE-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-Black.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-Black.otf"; sourceTree = "<group>"; };
+		38AC27CE44D44E5691991638 /* Intelligent Design - AvertaPE-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-LightItalic.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-LightItalic.otf"; sourceTree = "<group>"; };
+		5A6269088828440B98D30AD0 /* Intelligent Design - AvertaPE-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-Thin.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-Thin.otf"; sourceTree = "<group>"; };
+		61367E9F10504DD3AF04C9CB /* Intelligent Design - AvertaPE-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-Regular.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-Regular.otf"; sourceTree = "<group>"; };
+		73AE9BDF8E3D4A4480AF0D3A /* Intelligent Design - AvertaPE-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-Light.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-Light.otf"; sourceTree = "<group>"; };
+		77E4253C0B494002B5D5BB6B /* Intelligent Design - AvertaPE-ThinItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-ThinItalic.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-ThinItalic.otf"; sourceTree = "<group>"; };
+		7D8263D56B6E49978A2E0229 /* Intelligent Design - AvertaPE-Extrabold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-Extrabold.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-Extrabold.otf"; sourceTree = "<group>"; };
+		8404C7DF0C7642B1A2E0E4D9 /* Intelligent Design - AvertaPE-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-SemiboldItalic.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		904D1560A0534C68BFE18051 /* Intelligent Design - AvertaPE-ExtrathinItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-ExtrathinItalic.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-ExtrathinItalic.otf"; sourceTree = "<group>"; };
+		913BC0B028D6478D88CF623B /* Intelligent Design - AvertaPE-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-Bold.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-Bold.otf"; sourceTree = "<group>"; };
+		92DBEA4F0DE14AE7BFE84B31 /* Intelligent Design - AvertaPE-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-BlackItalic.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-BlackItalic.otf"; sourceTree = "<group>"; };
+		9F913E276D3A44C9912D10BB /* Intelligent Design - AvertaPE-Extrathin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-Extrathin.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-Extrathin.otf"; sourceTree = "<group>"; };
+		A2B4B8A322874E8D9A549C82 /* Intelligent Design - AvertaPE-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-BoldItalic.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-BoldItalic.otf"; sourceTree = "<group>"; };
+		A89C3896A56F4161BFA99C0C /* Intelligent Design - AvertaPE-ExtraboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Intelligent Design - AvertaPE-ExtraboldItalic.otf"; path = "../src/assets/fonts/Intelligent Design - AvertaPE-ExtraboldItalic.otf"; sourceTree = "<group>"; };
 		BB5808B612510E9F1547991F /* Pods-gingabox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gingabox.release.xcconfig"; path = "Target Support Files/Pods-gingabox/Pods-gingabox.release.xcconfig"; sourceTree = "<group>"; };
 		CA52EED40C5D4307BA19A817 /* libPods-gingabox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-gingabox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -36,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F655BC71237212D300DD962D /* libReact.a in Frameworks */,
 				DB37598C501BD3D12C0A1A5B /* libPods-gingabox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +117,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F44BCA1C97C6DEF85EC2DE62 /* Pods */,
+				D78000B1140A4824924094BE /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -97,13 +132,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D78000B1140A4824924094BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				34388328C9544D62AA5E4BAD /* Intelligent Design - AvertaPE-Black.otf */,
+				92DBEA4F0DE14AE7BFE84B31 /* Intelligent Design - AvertaPE-BlackItalic.otf */,
+				913BC0B028D6478D88CF623B /* Intelligent Design - AvertaPE-Bold.otf */,
+				A2B4B8A322874E8D9A549C82 /* Intelligent Design - AvertaPE-BoldItalic.otf */,
+				7D8263D56B6E49978A2E0229 /* Intelligent Design - AvertaPE-Extrabold.otf */,
+				A89C3896A56F4161BFA99C0C /* Intelligent Design - AvertaPE-ExtraboldItalic.otf */,
+				9F913E276D3A44C9912D10BB /* Intelligent Design - AvertaPE-Extrathin.otf */,
+				904D1560A0534C68BFE18051 /* Intelligent Design - AvertaPE-ExtrathinItalic.otf */,
+				73AE9BDF8E3D4A4480AF0D3A /* Intelligent Design - AvertaPE-Light.otf */,
+				38AC27CE44D44E5691991638 /* Intelligent Design - AvertaPE-LightItalic.otf */,
+				61367E9F10504DD3AF04C9CB /* Intelligent Design - AvertaPE-Regular.otf */,
+				0F29FEF5C738477991AE3FAF /* Intelligent Design - AvertaPE-RegularItalic.otf */,
+				0B68DA2D7EEA443E9F669D02 /* Intelligent Design - AvertaPE-Semibold.otf */,
+				8404C7DF0C7642B1A2E0E4D9 /* Intelligent Design - AvertaPE-SemiboldItalic.otf */,
+				5A6269088828440B98D30AD0 /* Intelligent Design - AvertaPE-Thin.otf */,
+				77E4253C0B494002B5D5BB6B /* Intelligent Design - AvertaPE-ThinItalic.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		F44BCA1C97C6DEF85EC2DE62 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				1326507C7915BED183F37004 /* Pods-gingabox.debug.xcconfig */,
 				BB5808B612510E9F1547991F /* Pods-gingabox.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +177,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				CC7C7A3D4272B96FEB92C1F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,20 +194,15 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
-				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
-				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "gingabox" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -170,6 +223,22 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				ACD44CB2ED8F41B8BCBC4FC4 /* Intelligent Design - AvertaPE-Black.otf in Resources */,
+				7E7DA0B613E1490A86A392A0 /* Intelligent Design - AvertaPE-BlackItalic.otf in Resources */,
+				A8ED8D49B70A47F2AB44AE43 /* Intelligent Design - AvertaPE-Bold.otf in Resources */,
+				A8E329C3102F458D9A92D783 /* Intelligent Design - AvertaPE-BoldItalic.otf in Resources */,
+				DB50725EEDEE48A38FF370CE /* Intelligent Design - AvertaPE-Extrabold.otf in Resources */,
+				5087B186044B4AADA014FC4D /* Intelligent Design - AvertaPE-ExtraboldItalic.otf in Resources */,
+				5A0D55A593FF46FC8D067D13 /* Intelligent Design - AvertaPE-Extrathin.otf in Resources */,
+				24ECADC940774B8B8A11FAEC /* Intelligent Design - AvertaPE-ExtrathinItalic.otf in Resources */,
+				F19156D5F76346A593D50789 /* Intelligent Design - AvertaPE-Light.otf in Resources */,
+				F16D937AAC6C4865A9873572 /* Intelligent Design - AvertaPE-LightItalic.otf in Resources */,
+				4CE047A923AB45D5BDA46832 /* Intelligent Design - AvertaPE-Regular.otf in Resources */,
+				0537884F57F64B1CA234FA9E /* Intelligent Design - AvertaPE-RegularItalic.otf in Resources */,
+				7095E26CD6A44C99910FA601 /* Intelligent Design - AvertaPE-Semibold.otf in Resources */,
+				99E006910C324D68BDCA31FB /* Intelligent Design - AvertaPE-SemiboldItalic.otf in Resources */,
+				80B48A640E0B4A3CA381B99D /* Intelligent Design - AvertaPE-Thin.otf in Resources */,
+				6988513A13DA4832B7D99C07 /* Intelligent Design - AvertaPE-ThinItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +279,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC7C7A3D4272B96FEB92C1F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gingabox/Pods-gingabox-resources.sh",
+				"${PODS_ROOT}/Intercom/Intercom/Intercom.framework/Versions/A/Resources/Intercom.bundle",
+				"${PODS_ROOT}/Intercom/Intercom/Intercom.framework/Versions/A/Resources/IntercomTranslations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Intercom.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IntercomTranslations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gingabox/Pods-gingabox-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD4C38642228810C00325AF5 /* Start Packager */ = {
@@ -265,6 +354,48 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/BVLinearGradient\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAppLoaderProvider\"",
+					"\"${PODS_ROOT}/Headers/Public/EXConstants\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFileSystem\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFont\"",
+					"\"${PODS_ROOT}/Headers/Public/EXKeepAwake\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLinearGradient\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLocation\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPermissions\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSQLite\"",
+					"\"${PODS_ROOT}/Headers/Public/EXWebBrowser\"",
+					"\"${PODS_ROOT}/Headers/Public/RNGestureHandler\"",
+					"\"${PODS_ROOT}/Headers/Public/RNKeychain\"",
+					"\"${PODS_ROOT}/Headers/Public/RNReanimated\"",
+					"\"${PODS_ROOT}/Headers/Public/RNScreens\"",
+					"\"${PODS_ROOT}/Headers/Public/RNShare\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"\"${PODS_ROOT}/Headers/Public/TouchID\"",
+					"\"${PODS_ROOT}/Headers/Public/UMBarCodeScannerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCameraInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMConstantsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCore\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFaceDetectorInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFileSystemInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFontInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMImageLoaderInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMPermissionsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMReactNativeAdapter\"",
+					"\"${PODS_ROOT}/Headers/Public/UMSensorsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMTaskManagerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-image-picker\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-intercom\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-splash-screen\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-webview\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+				);
 				INFOPLIST_FILE = gingabox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -284,6 +415,48 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/BVLinearGradient\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAppLoaderProvider\"",
+					"\"${PODS_ROOT}/Headers/Public/EXConstants\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFileSystem\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFont\"",
+					"\"${PODS_ROOT}/Headers/Public/EXKeepAwake\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLinearGradient\"",
+					"\"${PODS_ROOT}/Headers/Public/EXLocation\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPermissions\"",
+					"\"${PODS_ROOT}/Headers/Public/EXSQLite\"",
+					"\"${PODS_ROOT}/Headers/Public/EXWebBrowser\"",
+					"\"${PODS_ROOT}/Headers/Public/RNGestureHandler\"",
+					"\"${PODS_ROOT}/Headers/Public/RNKeychain\"",
+					"\"${PODS_ROOT}/Headers/Public/RNReanimated\"",
+					"\"${PODS_ROOT}/Headers/Public/RNScreens\"",
+					"\"${PODS_ROOT}/Headers/Public/RNShare\"",
+					"\"${PODS_ROOT}/Headers/Public/React\"",
+					"\"${PODS_ROOT}/Headers/Public/TouchID\"",
+					"\"${PODS_ROOT}/Headers/Public/UMBarCodeScannerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCameraInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMConstantsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCore\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFaceDetectorInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFileSystemInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFontInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMImageLoaderInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMPermissionsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMReactNativeAdapter\"",
+					"\"${PODS_ROOT}/Headers/Public/UMSensorsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMTaskManagerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-image-picker\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-intercom\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-splash-screen\"",
+					"\"${PODS_ROOT}/Headers/Public/react-native-webview\"",
+					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+				);
 				INFOPLIST_FILE = gingabox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -324,7 +497,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
