@@ -20,18 +20,18 @@ const persistConfig = {
   blacklist: ['loader']
 };
 
-const middlewares = [promise, thunk, requestMiddleware(apiRequest)];
+const middlewareList = [promise, thunk, requestMiddleware(apiRequest)];
 
-const enhancer = compose(applyMiddleware(...middlewares));
+const enhancer = compose(applyMiddleware(...middlewareList));
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 
 // CONFIGURE STORE
 export const store = createStore(persistedReducer, {}, enhancer);
 
-const persistor = persistStore(store);
+const persister = persistStore(store);
 
 export default () => ({
   store,
-  persistor
+  persister
 });

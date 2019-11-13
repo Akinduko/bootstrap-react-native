@@ -1,4 +1,4 @@
-import {feedbackConstants} from '<state>/constants';
+import feedbackConstants from '<state>/constants';
 
 const FEEDBACK_INITIAL_STATE = {
   type: 'error',
@@ -7,32 +7,32 @@ const FEEDBACK_INITIAL_STATE = {
   share: true,
   shareMessage: {
     title: '',
-    message: '',
+    message: ''
   },
-  onErrorClose: () => this.props.navigation.navigate ('Home'),
-  onSuccessClose: () => this.props.navigation.navigate ('Home'),
-  buttonText: 'Done',
+  onErrorClose: () => this.props.navigation.navigate('Home'),
+  onSuccessClose: () => this.props.navigation.navigate('Home'),
+  buttonText: 'Done'
 };
 
-export function feedback (state = FEEDBACK_INITIAL_STATE, action) {
+export function feedback(state = FEEDBACK_INITIAL_STATE, action) {
   switch (action.type) {
     case feedbackConstants.FEEDBACK_SUCCESS:
       return {
         ...state,
         ...action.status.data,
-        type: 'success',
+        type: 'success'
       };
     case feedbackConstants.FEEDBACK_ERROR:
       return {
         ...state,
         ...action.status.data,
-        type: 'error',
+        type: 'error'
       };
     case feedbackConstants.FEEDBACK_REWARD:
       return {
         ...state,
         ...action.status.data,
-        type: 'reward',
+        type: 'reward'
       };
     default:
       return state;

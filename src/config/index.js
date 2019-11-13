@@ -1,9 +1,9 @@
-import env from 'react-native-config';
+// import env from 'react-native-config';
 
-const config = {
+export const config = {
   api: {
-    host: env.API_HOST,
-    timeout: 20000,
+    // host: env.API_HOST,
+    timeout: 20000
   },
   base_url: '',
   paystack_public_key: '',
@@ -14,8 +14,6 @@ const config = {
   client_secret: ''
 };
 
-const API_HOST = config.api.host;
+// const API_HOST = config.api.host;
 
-export {API_HOST};
-
-export default config;
+// export { API_HOST };

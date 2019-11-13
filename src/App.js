@@ -19,7 +19,7 @@ import AppContainer from '<navigation>/App';
 import LoaderScreen from '<components>/Loader';
 import NavigationService from '<utils>/NavigationService';
 
-const { store, persistor } = getStore();
+const { store, persister } = getStore();
 
 const styles = StyleSheet.create({
   container: {
@@ -40,14 +40,17 @@ class App extends PureComponent {
   }
 
   render() {
-    if (!this.state.isReady) return this.renderLoader();
+    // add starting screen with text here
+    if (!this.state.isReady) return null;
     return (
       <Provider store={store}>
-        <PersistGate loading={() => <LoaderScreen />} persistor={persistor}>
+        <PersistGate loading={null} persistor={persister}>
           <SafeAreaView style={styles.container}>
             <StatusBar networkActivityIndicatorVisible />
             <AppContainer
-              ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)}
+              ref={navigatorRef => {
+                NavigationService.setTopLevelNavigator(navigatorRef);
+              }}
             />
             <LoaderScreen />
           </SafeAreaView>

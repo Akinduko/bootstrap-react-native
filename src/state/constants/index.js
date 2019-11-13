@@ -1,2 +1,7 @@
-export { default as authConstants } from './auth';
-export { default as feedbackConstants } from './feedback';
+import { feedbackConstants } from './feedback';
+import { authConstants } from './auth';
+
+export default {
+  feedbackConstants,
+  authConstants
+};

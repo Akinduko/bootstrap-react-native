@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { ActivityIndicator } from 'react-native';
-import { Overlay, StyleSheet } from 'react-native-elements';
+import { ActivityIndicator, StyleSheet } from 'react-native';
+import { Overlay } from 'react-native-elements';
 import PropTypes from 'prop-types';
 
 const style = StyleSheet.create({

@@ -1,6 +1,6 @@
-import {authConstants} from '<state>/constants';
+import authConstants from '<state>/constants';
 
-const initialState = {requests: []};
+const initialState = { requests: [] };
 
 /**
  *
@@ -9,7 +9,7 @@ const initialState = {requests: []};
  * @param {Object} action - the payload action
  * @param {string} action.type - the type of the action
  */
-export function loader (state = initialState, action) {
+export function loader(state = initialState, action) {
   if (typeof action.type !== 'string') {
     return state;
   }
@@ -18,31 +18,31 @@ export function loader (state = initialState, action) {
     return initialState;
   }
 
-  const actionType = action.type.substring (0, action.type.length - 8) || '';
-  if (action.type.endsWith ('/REQUEST')) {
+  const actionType = action.type.substring(0, action.type.length - 8) || '';
+  if (action.type.endsWith('/REQUEST')) {
     return {
       ...state,
-      requests: [...state.requests, actionType],
+      requests: [...state.requests, actionType]
     };
   }
-  if (action.type.endsWith ('/SUCCESS')) {
+  if (action.type.endsWith('/SUCCESS')) {
     return {
       ...state,
       requests: [
-        ...state.requests.filter (_request => {
+        ...state.requests.filter(_request => {
           return _request !== actionType;
-        }),
-      ],
+        })
+      ]
     };
   }
-  if (action.type.endsWith ('FAILURE')) {
+  if (action.type.endsWith('FAILURE')) {
     return {
       ...state,
       requests: [
-        ...state.requests.filter (_request => {
+        ...state.requests.filter(_request => {
           return _request !== actionType;
-        }),
-      ],
+        })
+      ]
     };
   }
   return state;
