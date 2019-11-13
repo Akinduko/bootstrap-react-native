@@ -31,15 +31,15 @@
                             <string key="content">Share and rent spare spaces
 </string>
                             <attributes>
-                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <font key="NSFont" size="28" name="Roboto-Medium"/>
+                                <color key="NSColor" red="0.98540722150259064" green="0.98540722150259064" blue="0.98540722150259064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="38" name="Roboto-Medium"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                         <fragment content="effortlessly for  warehousing in Africa.">
                             <attributes>
-                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <font key="NSFont" size="28" name="Roboto-Medium"/>
+                                <color key="NSColor" red="0.98540722150259064" green="0.98540722150259064" blue="0.98540722150259064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="38" name="Roboto-Medium"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>

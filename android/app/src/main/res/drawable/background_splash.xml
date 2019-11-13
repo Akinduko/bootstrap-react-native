@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/greenBlue"/>
+
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/splash"
+            />
+    </item>
+<!--    <view-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/logo_id"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:justificationMode="inter_word"-->
+<!--        android:fontFamily="@font/roboto_medium"-->
+<!--        android:text="Share and rent spare spaces effortlessly for warehousing in Africa."-->
+<!--        android:textColor="@color/white"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="35.56dp" />-->
+
+</layer-list>

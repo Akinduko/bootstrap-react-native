@@ -20,6 +20,7 @@ import com.gingabox.generated.BasePackageList;
 import com.swmansion.reanimated.ReanimatedPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
 
 import org.unimodules.adapters.react.ReactAdapterPackage;
 import org.unimodules.adapters.react.ModuleRegistryAdapter;
@@ -34,51 +35,52 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
-  private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
-    new BasePackageList().getPackageList(),
-    Arrays.<SingletonModule>asList()
-  );
+    private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
+            new BasePackageList().getPackageList(),
+            Arrays.<SingletonModule>asList()
+    );
 
-  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+    private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+        @Override
+        public boolean getUseDeveloperSupport() {
+            return BuildConfig.DEBUG;
+        }
+
+        @Override
+        protected List<ReactPackage> getPackages() {
+            return Arrays.<ReactPackage>asList(
+                    new MainReactPackage(),
+                    new AsyncStoragePackage(),
+                    new KeychainPackage(),
+                    new RNScreensPackage(),
+                    new RNCWebViewPackage(),
+                    new ImagePickerPackage(),
+                    new RNGestureHandlerPackage(),
+                    new IntercomPackage(),
+                    new RNSharePackage(),
+                    new ReanimatedPackage(),
+                    new SplashScreenReactPackage(),
+                    new FingerprintAuthPackage(),
+                    new LinearGradientPackage(),
+                    new VectorIconsPackage(),
+                    new ModuleRegistryAdapter(mModuleRegistryProvider)
+            );
+        }
+
+        @Override
+        protected String getJSMainModuleName() {
+            return "index";
+        }
+    };
+
     @Override
-    public boolean getUseDeveloperSupport() {
-      return BuildConfig.DEBUG;
+    public ReactNativeHost getReactNativeHost() {
+        return mReactNativeHost;
     }
 
     @Override
-    protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-            new AsyncStoragePackage(),
-            new RNCWebViewPackage(),
-            new FingerprintAuthPackage(),
-            new RNSharePackage(),
-            new LinearGradientPackage(),
-            new KeychainPackage(),
-            new IntercomPackage(),
-            new ImagePickerPackage(),
-            new SplashScreenReactPackage(),
-          new ReanimatedPackage(),
-          new RNGestureHandlerPackage(),
-          new RNScreensPackage(),
-          new ModuleRegistryAdapter(mModuleRegistryProvider)
-      );
+    public void onCreate() {
+        super.onCreate();
+        SoLoader.init(this, /* native exopackage */ false);
     }
-
-    @Override
-    protected String getJSMainModuleName() {
-      return "index";
-    }
-  };
-
-  @Override
-  public ReactNativeHost getReactNativeHost() {
-    return mReactNativeHost;
-  }
-
-  @Override
-  public void onCreate() {
-    super.onCreate();
-    SoLoader.init(this, /* native exopackage */ false);
-  }
 }

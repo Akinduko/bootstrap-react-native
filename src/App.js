@@ -7,7 +7,7 @@
  */
 
 import React, {PureComponent} from 'react';
-import {StyleSheet, View, StatusBar, AppState} from 'react-native';
+import {StyleSheet, SafeAreaView, StatusBar, AppState} from 'react-native';
 import {Provider} from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
 
@@ -15,7 +15,9 @@ import {PersistGate} from 'redux-persist/integration/react';
 
 import getStore from './state/store';
 
-import Landing from '<screens>/Landing';
+import AppContainer from '<navigation>/App';
+import LoaderScreen from '<components>/Loader';
+import NavigationService from '<utils>/NavigationService';
 
 const {store, persistor} = getStore ();
 
@@ -40,11 +42,21 @@ class App extends PureComponent {
     if (!this.state.isReady) return this.renderLoader ();
     return (
       <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <View style={styles.container}>
+        <PersistGate
+          loading={() => {
+            return <LoaderScreen />;
+          }}
+          persistor={persistor}
+        >
+          <SafeAreaView style={styles.container}>
             <StatusBar networkActivityIndicatorVisible />
-            <Landing />
-          </View>
+            <AppContainer
+              ref={navigatorRef => {
+                NavigationService.setTopLevelNavigator (navigatorRef);
+              }}
+            />
+            <LoaderScreen />
+          </SafeAreaView>
         </PersistGate>
       </Provider>
     );
