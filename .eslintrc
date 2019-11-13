@@ -1,78 +1,89 @@
 {
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb",
-        "prettier",
-        "prettier/react"
-    ],
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "plugins": [
-        "react",
-        "jsx-a11y",
-        "import",
-        "eslint-plugin-prettier",
-        "eslint-plugin-react"
-    ],
-    "env": {
-        "browser": true,
-        "es6": true,
-        "jest": true
-    },
-    "rules": {
-        "comma-dangle": 0,
-        "react/destructuring-assignment": "off",
-        "react/static-property-placement": ["warn", "static public field"],
-        "prettier/prettier": [
-            "error"
-        ],
-        "no-use-before-define": [
-            "error",
-            {
-                "functions": true,
-                "classes": true,
-                "variables": false
-            }
-        ],
-        "global-require": "off",
-        "react/jsx-filename-extension": [
-            "error",
-            {
-                "extensions": [
-                    ".js",
-                    ".jsx"
-                ]
-            }
-        ],
-        "jsx-a11y/label-has-associated-control": [ "error", {
-            "required": {
-              "some": [ "nesting", "id"  ]
-            }
-        }],
-        "jsx-a11y/label-has-for": [ "error", {
-            "required": {
-              "some": [ "nesting", "id"  ]
-            }
-          }],
-          "react/jsx-props-no-spreading": ["error",{
-            "html": "ignore",
-            "custom": "enforce"
-        }],
-        "react/state-in-constructor": "off"
-
-    },
-    "settings": {
-        "import/resolver": {
-            "webpack": {
-                "config": "webpack.config.js",
-                "env":{
-                    "NODE_ENV": "development"
-                }
-            }
-        }
+  "extends": ["plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     }
+  },
+  "plugins": ["react", "react-native", "jsx-a11y", "import", "eslint-plugin-prettier", "eslint-plugin-react"],
+  "env": {
+    "react-native/react-native": true,
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "comma-dangle": 0,
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-color-literals": 2,
+    "react-native/no-raw-text": 2,
+    "react-native/no-single-element-style-arrays": 2,
+    "react/static-property-placement": ["warn", "static public field"],
+    "react/prefer-stateless-function": [0],
+    "react/jsx-indent": [0],
+    "react/sort-comp": [0],
+    "react/destructuring-assignment": [0],
+    "react/forbid-prop-types": [0],
+    "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
+    "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": false }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "camelcase": 1,
+
+    "semi": ["error", "always"],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "jsxSingleQuote": false,
+        "printWidth": 100,
+        "semi": true,
+        "jsxBracketSameLine": true
+      }
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": true,
+        "classes": true,
+        "variables": true
+      }
+    ],
+    "global-require": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "html": "ignore",
+        "custom": "enforce"
+      }
+    ],
+    "react/state-in-constructor": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
 }

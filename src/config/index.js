@@ -1,4 +1,10 @@
-export const config = {
+import env from 'react-native-config';
+
+const config = {
+  api: {
+    host: env.API_HOST,
+    timeout: 20000,
+  },
   base_url: '',
   paystack_public_key: '',
   rave_encryption_key: '',
@@ -7,3 +13,9 @@ export const config = {
   client_id: '',
   client_secret: ''
 };
+
+const API_HOST = config.api.host;
+
+export {API_HOST};
+
+export default config;

@@ -5,6 +5,8 @@ target 'gingabox' do
 require_relative '../node_modules/react-native-unimodules/cocoapods'
 
 # Add new pods below this line
+pod 'react-native-config', :path => '../node_modules/react-native-config'
+
 pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
 pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
