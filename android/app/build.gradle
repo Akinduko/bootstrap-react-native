@@ -84,7 +84,6 @@ project.ext.envConfigFiles = [
 
 apply from: '../../node_modules/react-native-unimodules/gradle.groovy'
 apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
-apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 apply from: "../../node_modules/react-native/react.gradle"
 
 /**
@@ -147,7 +146,6 @@ android {
 }
 
 dependencies {
-    implementation project(':react-native-config')
     implementation project(':react-native-vector-icons')
     implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-webview')

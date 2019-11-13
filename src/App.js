@@ -43,17 +43,11 @@ class App extends PureComponent {
     if (!this.state.isReady) return this.renderLoader();
     return (
       <Provider store={store}>
-        <PersistGate
-          loading={() => {
-            return <LoaderScreen />;
-          }}
-          persistor={persistor}>
+        <PersistGate loading={() => <LoaderScreen />} persistor={persistor}>
           <SafeAreaView style={styles.container}>
             <StatusBar networkActivityIndicatorVisible />
             <AppContainer
-              ref={navigatorRef => {
-                NavigationService.setTopLevelNavigator(navigatorRef);
-              }}
+              ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)}
             />
             <LoaderScreen />
           </SafeAreaView>

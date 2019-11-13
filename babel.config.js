@@ -1,5 +1,5 @@
-module.exports = function (api) {
-  api.cache (true);
+module.exports = api => {
+  api.cache(true);
   return {
     presets: ['module:metro-react-native-babel-preset'],
     plugins: [
@@ -17,10 +17,10 @@ module.exports = function (api) {
             '<screens>': './src/screens',
             '<services>': './src/services',
             '<state>': './src/state',
-            '<utils>': './src/utils',
-          },
-        },
-      ],
-    ],
+            '<utils>': './src/utils'
+          }
+        }
+      ]
+    ]
   };
 };

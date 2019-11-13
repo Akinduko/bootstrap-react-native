@@ -37,8 +37,6 @@ PODS:
   - Intercom (5.5.2)
   - React (0.59.10):
     - React/Core (= 0.59.10)
-  - react-native-config (0.11.7):
-    - React
   - react-native-image-picker (1.1.0):
     - React
   - react-native-intercom (13.2.0):
@@ -151,7 +149,6 @@ DEPENDENCIES:
   - EXWebBrowser (from `../node_modules/expo-web-browser/ios`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - react-native-config (from `../node_modules/react-native-config`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-intercom (from `../node_modules/react-native-intercom`)
   - react-native-maps (from `../node_modules/react-native-maps`)
@@ -238,8 +235,6 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
-  react-native-config:
-    :path: "../node_modules/react-native-config"
   react-native-image-picker:
     :path: "../node_modules/react-native-image-picker"
   react-native-intercom:
@@ -323,7 +318,6 @@ SPEC CHECKSUMS:
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   Intercom: 1151a15e5e7931d8e401671a4357239d44325159
   React: 36d0768f9e93be2473b37e7fa64f92c1d5341eef
-  react-native-config: 55548054279d92e0e4566ea15a8b9b81028ec342
   react-native-image-picker: 7a85cf7b0a53845f03ae52fb4592a2748ded069b
   react-native-intercom: 25ceddd224fdf63be29d4e25e95a893e5befe18f
   react-native-maps: 6e499eee4eabf422ba8b6f94e993cc768bf35153
@@ -351,6 +345,6 @@ SPEC CHECKSUMS:
   UMTaskManagerInterface: 1e70fe58b872355f0ecb44fb81bb1a16484047f0
   yoga: 684513b14b03201579ba3cee20218c9d1298b0cc
 
-PODFILE CHECKSUM: 4c8e838a52ce976377c2a1360a272e7a273df86c
+PODFILE CHECKSUM: b04ec6091d27fd07444f28abc616a3b9637fa253
 
 COCOAPODS: 1.8.4

@@ -1,37 +1,47 @@
-import React, {useEffect} from 'react';
-import Carousel, {Pagination} from 'react-native-snap-carousel';
-import {View, Image} from 'react-native';
-import {styles, sliderWidth} from './style';
+import React, { useEffect } from 'react';
+import Carousel, { Pagination } from 'react-native-snap-carousel';
+import { View, Image, Text } from 'react-native';
+import PropTypes from 'prop-types';
+import { styles, sliderWidth } from './style';
 
 const initialState = {
   activeSlide: 0,
   pages: [
     {
-      id: 1,
+      id: 1
     },
     {
-      id: 2,
-    },
-  ],
+      id: 2
+    }
+  ]
 };
 const LandingPage = props => {
-  const {customRenderItem} = props;
-  const [state, setState] = useEffect (initialState);
-  const [sliderRef, setRef] = useEffect (null);
-  const {activeSlide, pages} = state;
+  const { customRenderItem } = props;
+  const [state, setState] = useEffect(initialState);
+  const [sliderRef, setRef] = useEffect(null);
+  const { activeSlide, pages } = state;
+  const {
+    mainContainer,
+    imageStyle,
+    headerText,
+    captionContainerStyle,
+    captionStyle,
+    CarouselContainer
+  } = styles;
 
-  const _renderItem = ({item}) => {
+  const renderItem = () => {
     return (
-      <View style={styles.mainContainer}>
+      <View style={mainContainer}>
         <Image
-          source={require ('<assets>/images/PeopleLanding/group1048.png')}
+          source={require('<assets>/images/PeopleLanding/group1048.png')}
           resizeMode="contain"
-          style={styles.imageStyle}
+          style={imageStyle}
         />
-        <Text style={styles.headerText}>Welcome to Ginjabox</Text>
-        <View style={styles.captionContainerStyle}>
-          <Text style={styles.captionStyle}>
-            Ginjabox allow anyone to convert their spare spaces into warehouse spaces that can be rented by merchants from anywhere in the world.
+        <Text style={headerText}>Welcome to Ginjabox</Text>
+        <View style={captionContainerStyle}>
+          <Text style={captionStyle}>
+            Ginjabox allow anyone to convert their spare spaces into warehouse spaces that can be
+            rented by merchants from anywhere in the world.
           </Text>
         </View>
       </View>
@@ -40,15 +50,11 @@ const LandingPage = props => {
 
   const MainView = () => {
     return (
-      <View
-        scrollEventThrottle={10}
-        directionalLockEnabled={true}
-        style={{height: '70%'}}
-      >
+      <View scrollEventThrottle={10} directionalLockEnabled style={CarouselContainer}>
         <Carousel
-          ref={c => setRef (c)}
+          ref={c => setRef(c)}
           data={pages}
-          renderItem={customRenderItem || _renderItem}
+          renderItem={customRenderItem || renderItem}
           sliderWidth={sliderWidth}
           itemWidth={sliderWidth}
           hasParallaxImages={false}
@@ -58,16 +64,17 @@ const LandingPage = props => {
           // inactiveSlideShift={20}
           //   containerCustomStyle={styles.slider}
           //   contentContainerCustomStyle={styles.sliderContentContainer}
-          loop={true}
+          loop
           loopClonesPerSide={2}
           autoplay={false}
           autoplayDelay={500}
           autoplayInterval={3000}
           onSnapToItem={index =>
-            setState ({
+            setState({
               ...state,
-              activeSlide: index,
-            })}
+              activeSlide: index
+            })
+          }
         />
       </View>
     );
@@ -99,6 +106,10 @@ const LandingPage = props => {
       <PaginationView />
     </View>
   );
+};
+
+LandingPage.propTypes = {
+  customRenderItem: PropTypes.func.isRequired
 };
 
 export default LandingPage;

@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions, Platform } from 'react-native';
+
 const wS = Dimensions.get('window');
 const dh = wS.height;
 const dw = wS.width;
@@ -54,6 +55,7 @@ export const styles = StyleSheet.create({
     flex: 1
     // marginTop: "5%"
   },
+  carouselContainer: { height: '70%' },
   text_style: {
     fontSize: 14,
     color: 'rgba(255,255,255,1)',
@@ -131,7 +133,6 @@ export const styles = StyleSheet.create({
     lineHeight: 18,
     textAlign: 'center',
     marginTop: '5%',
-    // height:"100%",
     width: '80%'
   }
 });
