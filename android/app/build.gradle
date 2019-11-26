@@ -146,6 +146,8 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-keyevent')
+    implementation project(':@unimodules_react-native-adapter')
     implementation project(':react-native-vector-icons')
     implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-webview')

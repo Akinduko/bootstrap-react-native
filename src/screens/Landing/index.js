@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Image, Text, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
+import { withNavigation } from 'react-navigation';
 import { paginationStyles, carouselStyles, styles, sliderWidth } from '<screens>/Landing/style';
 import Carousel from '<components>/Carousel';
 
@@ -74,10 +75,12 @@ renderItem.propTypes = {
   }).isRequired
 };
 
-const Landing = () => {
+const Landing = ({ navigation }) => {
   const [lastButton, changeRightButton] = useState(false);
   const [controlSlide, controlledSlide] = useState(false);
-  const gotoLogin = () => {};
+  const gotoLogin = () => {
+    navigation.navigate('auth');
+  };
   return (
     <View style={container}>
       <Carousel
@@ -117,5 +120,7 @@ const Landing = () => {
     </View>
   );
 };
-
-export default Landing;
+Landing.propTypes = {
+  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired
+};
+export default withNavigation(Landing);

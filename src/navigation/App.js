@@ -1,13 +1,22 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 import authStack from './AuthNav';
+import Landing from '<screens>/Landing';
 
 const AppNavigator = createSwitchNavigator(
   {
-    auth: authStack
+    landing: {
+      screen: Landing,
+      navigationOptions: () => ({
+        header: null
+      })
+    },
+    auth: {
+      screen: authStack
+    }
   },
   {
-    initialRouteName: 'auth'
+    initialRouteName: 'landing'
   }
 );
 

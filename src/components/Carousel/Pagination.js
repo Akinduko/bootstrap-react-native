@@ -31,7 +31,7 @@ const PaginationView = ({
         inactiveDotOpacity={inactiveDotOpacity}
         inactiveDotScale={inactiveDotScale}
         carouselRef={sliderRef}
-        tappableDots
+        tappableDots={!!sliderRef}
       />
       {rightShow ? rightComponent : null}
     </View>

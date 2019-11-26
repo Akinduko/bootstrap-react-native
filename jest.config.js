@@ -15,7 +15,8 @@ module.exports = {
     '^<navigation>/(.*)$': '<rootDir>/src/navigation/$1',
     '^<screens>/(.*)$': '<rootDir>/src/screens/$1',
     '^<services>/(.*)$': '<rootDir>/src/services/$1',
-    '^<state>/(.*)$': '<rootDir>/src/state/$1'
+    '^<state>/(.*)$': '<rootDir>/src/state/$1',
+    '^<utils>/(.*)$': '<rootDir>/src/utils/$1'
   },
   verbose: true,
   snapshotSerializers: ['enzyme-to-json/serializer']
