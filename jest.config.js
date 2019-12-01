@@ -16,6 +16,8 @@ module.exports = {
     '^<screens>/(.*)$': '<rootDir>/src/screens/$1',
     '^<services>/(.*)$': '<rootDir>/src/services/$1',
     '^<state>/(.*)$': '<rootDir>/src/state/$1',
+    '^<graphql>/(.*)$': '<rootDir>/src/graphql/$1',
+    '^<context>/(.*)$': '<rootDir>/src/context/$1',
     '^<utils>/(.*)$': '<rootDir>/src/utils/$1'
   },
   verbose: true,

@@ -1,19 +1,21 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"allowSyntheticDefaultImports": true,
-		"paths": {
-			"<assets>/*": ["./src/assets/*"],
-			"<components>/*": ["./src/components/*"],
-			"<config>/*": ["./src/config/*"],
-			"<constants>/*": ["./src/constants/*"],
-			"<integrations>/*": ["./src/integrations/*"],
-			"<navigation>/*": ["./src/navigation/*"],
-			"<screens>/*": ["./src/screens/*"],
-			"<services>/*": ["./src/services/*"],
-			"<state>/*": ["./src/state/*"],
-			"<utils>/*": ["./src/utils/*"]
-		}
-	},
-	"exclude": ["node_modules"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "<assets>/*": ["./src/assets/*"],
+      "<components>/*": ["./src/components/*"],
+      "<config>/*": ["./src/config/*"],
+      "<constants>/*": ["./src/constants/*"],
+      "<integrations>/*": ["./src/integrations/*"],
+      "<navigation>/*": ["./src/navigation/*"],
+      "<screens>/*": ["./src/screens/*"],
+      "<services>/*": ["./src/services/*"],
+      "<state>/*": ["./src/state/*"],
+      "<graphql>/*": ["./src/graphql/*"],
+      "<graphql>/*": ["./src/context/*"],
+      "<utils>/*": ["./src/utils/*"]
+    }
+  },
+  "exclude": ["node_modules"]
 }

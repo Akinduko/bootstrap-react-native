@@ -8,18 +8,12 @@
 
 import React, { PureComponent } from 'react';
 import { StyleSheet, SafeAreaView, StatusBar } from 'react-native';
-import { Provider } from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
-
-import { PersistGate } from 'redux-persist/integration/react';
-
-import getStore from '<state>/store';
-
+import { ApolloProvider } from 'react-apollo';
+import client from '<graphql>';
 import AppContainer from '<navigation>/App';
 import LoaderScreen from '<components>/Loader';
 import NavigationService from '<utils>/NavigationService';
-
-const { store, persister } = getStore();
 
 const styles = StyleSheet.create({
   container: {
@@ -43,19 +37,19 @@ class App extends PureComponent {
     // add starting screen with text here
     if (!this.state.isReady) return null;
     return (
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persister}>
-          <SafeAreaView style={styles.container}>
-            <StatusBar networkActivityIndicatorVisible />
-            <AppContainer
-              ref={navigatorRef => {
-                NavigationService.setTopLevelNavigator(navigatorRef);
-              }}
-            />
-            <LoaderScreen />
-          </SafeAreaView>
-        </PersistGate>
-      </Provider>
+      <ApolloProvider client={client}>
+        <SafeAreaView style={styles.container}>
+          <StatusBar networkActivityIndicatorVisible />
+
+          <AppContainer
+            ref={navigatorRef => {
+              NavigationService.setTopLevelNavigator(navigatorRef);
+            }}
+          />
+
+          <LoaderScreen />
+        </SafeAreaView>
+      </ApolloProvider>
     );
   }
 }

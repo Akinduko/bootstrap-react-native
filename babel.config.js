@@ -17,6 +17,8 @@ module.exports = api => {
             '<screens>': './src/screens',
             '<services>': './src/services',
             '<state>': './src/state',
+            '<graphql>': './src/graphql',
+            '<context>': './src/context',
             '<utils>': './src/utils'
           }
         }

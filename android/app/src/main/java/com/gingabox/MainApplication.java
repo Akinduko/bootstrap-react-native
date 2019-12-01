@@ -60,7 +60,6 @@ public class MainApplication extends Application implements ReactApplication {
                     new ReanimatedPackage(),
                     new SplashScreenReactPackage(),
                     new FingerprintAuthPackage(),
-                    new LinearGradientPackage(),
                     new VectorIconsPackage(),
                     new ModuleRegistryAdapter(mModuleRegistryProvider)
             );
