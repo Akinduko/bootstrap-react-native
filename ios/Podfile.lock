@@ -1,7 +1,5 @@
 PODS:
   - boost-for-react-native (1.63.0)
-  - BVLinearGradient (2.5.6):
-    - React
   - DoubleConversion (1.1.6)
   - EXAppLoaderProvider (7.0.0)
   - EXConstants (7.0.1):
@@ -37,8 +35,6 @@ PODS:
   - Intercom (5.5.2)
   - React (0.59.10):
     - React/Core (= 0.59.10)
-  - react-native-image-picker (1.1.0):
-    - React
   - react-native-intercom (13.2.0):
     - Intercom (~> 5.5.1)
     - React
@@ -135,7 +131,6 @@ PODS:
   - yoga (0.59.10.React)
 
 DEPENDENCIES:
-  - BVLinearGradient (from `../node_modules/react-native-linear-gradient`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXAppLoaderProvider (from `../node_modules/expo-app-loader-provider/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
@@ -149,7 +144,6 @@ DEPENDENCIES:
   - EXWebBrowser (from `../node_modules/expo-web-browser/ios`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-intercom (from `../node_modules/react-native-intercom`)
   - react-native-maps (from `../node_modules/react-native-maps`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
@@ -195,8 +189,6 @@ SPEC REPOS:
     - Intercom
 
 EXTERNAL SOURCES:
-  BVLinearGradient:
-    :path: "../node_modules/react-native-linear-gradient"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   EXAppLoaderProvider:
@@ -235,8 +227,6 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
-  react-native-image-picker:
-    :path: "../node_modules/react-native-image-picker"
   react-native-intercom:
     :path: "../node_modules/react-native-intercom"
   react-native-maps:
@@ -302,7 +292,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   EXAppLoaderProvider: 5d348813a9cf09b03bbe5b8b55437bc1bfbddbd1
   EXConstants: 857aa7b1c84e2878f8402d712061860bca16a697
@@ -318,7 +307,6 @@ SPEC CHECKSUMS:
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   Intercom: 1151a15e5e7931d8e401671a4357239d44325159
   React: 36d0768f9e93be2473b37e7fa64f92c1d5341eef
-  react-native-image-picker: 7a85cf7b0a53845f03ae52fb4592a2748ded069b
   react-native-intercom: 25ceddd224fdf63be29d4e25e95a893e5befe18f
   react-native-maps: 6e499eee4eabf422ba8b6f94e993cc768bf35153
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
@@ -345,6 +333,6 @@ SPEC CHECKSUMS:
   UMTaskManagerInterface: 1e70fe58b872355f0ecb44fb81bb1a16484047f0
   yoga: 684513b14b03201579ba3cee20218c9d1298b0cc
 
-PODFILE CHECKSUM: f9d1b0cb3c6eef918af761aca4326f49c1dfe2dd
+PODFILE CHECKSUM: 44461d7ae0156867361afbf673b3e945fc06ecc9
 
 COCOAPODS: 1.8.4

@@ -147,16 +147,13 @@ android {
 
 dependencies {
     implementation project(':react-native-keyevent')
-    implementation project(':@unimodules_react-native-adapter')
     implementation project(':react-native-vector-icons')
     implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-webview')
     implementation project(':react-native-touch-id')
     implementation project(':react-native-share')
-    implementation project(':react-native-linear-gradient')
     implementation project(':react-native-keychain')
     implementation project(':react-native-intercom')
-    implementation project(':react-native-image-picker')
     implementation project(':react-native-splash-screen')
     implementation project(':react-native-screens')
     implementation project(':react-native-reanimated')

@@ -15,15 +15,12 @@ pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-s
 pod 'react-native-maps', :path => '../node_modules/react-native-maps'
 
 
-pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
-
 pod 'react-native-webview', :path => '../node_modules/react-native-webview'
 
 pod 'RNScreens', :path => '../node_modules/react-native-screens'
 
 pod 'react-native-intercom', :path => '../node_modules/react-native-intercom'
 
-pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
 pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 

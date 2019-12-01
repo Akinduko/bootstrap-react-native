@@ -1,8 +1,7 @@
 apply from: '../node_modules/react-native-unimodules/gradle.groovy'
+
 include ':react-native-keyevent'
 project(':react-native-keyevent').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-keyevent/android')
-include ':@unimodules_react-native-adapter'
-project(':@unimodules_react-native-adapter').projectDir = new File(rootProject.projectDir, '../node_modules/@unimodules/react-native-adapter/android')
 
 include ':react-native-vector-icons'
 project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
@@ -14,14 +13,10 @@ include ':react-native-touch-id'
 project(':react-native-touch-id').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-touch-id/android')
 include ':react-native-share'
 project(':react-native-share').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-share/android')
-include ':react-native-linear-gradient'
-project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
 include ':react-native-keychain'
 project(':react-native-keychain').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-keychain/android')
 include ':react-native-intercom'
 project(':react-native-intercom').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-intercom/android')
-include ':react-native-image-picker'
-project(':react-native-image-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-picker/android')
 include ':react-native-splash-screen'
 project(':react-native-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-splash-screen/android')
 include ':react-native-screens'

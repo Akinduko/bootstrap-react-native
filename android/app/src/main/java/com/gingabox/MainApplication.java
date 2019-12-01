@@ -4,15 +4,12 @@ import android.app.Application;
 
 import com.facebook.react.ReactApplication;
 import com.github.kevinejohn.keyevent.KeyEventPackage;
-import org.unimodules.adapters.react.ModuleRegistryAdapter;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.rnfingerprint.FingerprintAuthPackage;
 import cl.json.RNSharePackage;
-import com.BV.LinearGradient.LinearGradientPackage;
 import com.oblador.keychain.KeychainPackage;
 import com.robinpowered.react.Intercom.IntercomPackage;
-import com.imagepicker.ImagePickerPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -53,12 +50,10 @@ public class MainApplication extends Application implements ReactApplication {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
             new KeyEventPackage(),
-            new ModuleRegistryAdapter(),
                     new AsyncStoragePackage(),
                     new KeychainPackage(),
                     new RNScreensPackage(),
                     new RNCWebViewPackage(),
-                    new ImagePickerPackage(),
                     new RNGestureHandlerPackage(),
                     new IntercomPackage(),
                     new RNSharePackage(),
