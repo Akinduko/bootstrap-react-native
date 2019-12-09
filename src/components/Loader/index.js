@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { ActivityIndicator, StyleSheet } from 'react-native';
 import { Overlay } from 'react-native-elements';
 import PropTypes from 'prop-types';
@@ -11,7 +10,7 @@ const style = StyleSheet.create({
 const LoaderScreen = props => {
   return (
     <Overlay
-      isVisible={props.isLoading}
+      isVisible={props.loading}
       windowBackgroundColor="rgba(255, 255, 255, .9)"
       overlayBackgroundColor="transparent"
       width="auto"
@@ -23,13 +22,7 @@ const LoaderScreen = props => {
 };
 
 LoaderScreen.propTypes = {
-  isLoading: PropTypes.bool.isRequired
+  loading: PropTypes.bool.isRequired
 };
 
-function mapStatesToProps(state) {
-  return {
-    isLoading: (Array.isArray(state.loader.requests) && state.loader.requests.length > 0) || false
-  };
-}
-
-export default connect(mapStatesToProps)(LoaderScreen);
+export default LoaderScreen;

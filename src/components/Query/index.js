@@ -4,9 +4,12 @@ import { Query } from 'react-apollo';
 import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 
-const QueryContainer = ({ Component, query }) => {
+const QueryContainer = ({ Component, query, onCompleted, update }) => {
   return (
-    <Query query={query}>
+    <Query
+      query={query}
+      onCompleted={onCompleted}
+      update={(store, { data }) => update(store, data)}>
       {({ loading, error, data }) => {
         if (loading)
           return (
@@ -29,11 +32,15 @@ const QueryContainer = ({ Component, query }) => {
 
 QueryContainer.propTypes = {
   Component: PropTypes.func,
-  query: PropTypes.func
+  query: PropTypes.func,
+  onCompleted: PropTypes.func,
+  update: PropTypes.func
 };
 
 QueryContainer.defaultProps = {
   query: () => {},
+  update: () => {},
+  onCompleted: () => {},
   Component: () => {}
 };
 

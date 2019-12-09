@@ -56,7 +56,6 @@ class DatePicker extends PureComponent {
     onPressMask: PropTypes.func,
     placeholder: PropTypes.string,
     is24Hour: PropTypes.bool,
-    getDateStr: PropTypes.func,
     locale: PropTypes.string,
     updatePicker: PropTypes.func,
     TouchableComponent: PropTypes.func,
@@ -77,10 +76,10 @@ class DatePicker extends PureComponent {
     TouchableComponent: TouchableHighlight,
     mode: 'date',
     androidMode: 'calendar',
-    date: new Date(),
+    date: Moment().toDate(),
     format: 'YYYY-MM-DD',
-    minDate: '',
-    maxDate: '',
+    minDate: Moment('01/01/1800', 'DD/mm/YYYY').toDate(),
+    maxDate: Moment('01/01/2100', 'DD/mm/YYYY').toDate(),
     confirmBtnText: 'Ok',
     cancelBtnText: 'Cancel',
     updatePicker: () => {},
@@ -91,7 +90,6 @@ class DatePicker extends PureComponent {
     onCloseModal: () => {},
     onPressMask: () => {},
     is24Hour: false,
-    getDateStr: () => {},
     locale: '',
     testID: 'test',
     cancelBtnTestID: 'test',
@@ -220,10 +218,6 @@ class DatePicker extends PureComponent {
 
     const dateInstance = date instanceof Date ? date : this.getDate(date);
 
-    if (typeof this.props.getDateStr === 'function') {
-      return this.props.getDateStr(dateInstance);
-    }
-
     return Moment(dateInstance).format(format);
   }
 
@@ -267,8 +261,10 @@ class DatePicker extends PureComponent {
 
   onDatePicked({ action, year, month, day }) {
     if (action !== DatePickerAndroid.dismissedAction) {
+      const date = Moment(`${day}/${month}/${year}`, 'DD/mm/YYYY').toDate();
+
       this.setState({
-        date: new Date(year, month, day)
+        date
       });
       this.datePicked();
     } else {

@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 import { Input } from 'react-native-elements';
 import RNPickerSelect from 'react-native-picker-select';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-
+import PropTypes from 'prop-types';
 import { StepThreeStyles, borderedPickerSelectStyles } from './style';
 
 const initialFocus = {
@@ -13,7 +13,7 @@ const initialFocus = {
   accountNumber: false,
   email: false
 };
-const StepThree = () => {
+const StepThree = ({ activateButton }) => {
   const inputs = {};
   const [focus, setFocus] = useState(initialFocus);
   const [state, setState] = useState({
@@ -47,7 +47,6 @@ const StepThree = () => {
     headerText,
     viewContainer,
     headerContainer,
-    PickerContainer,
     inputContainer,
     footerContainer,
     containerStyle,
@@ -60,6 +59,7 @@ const StepThree = () => {
 
   const onFocus = name => {
     setFocus({ ...initialFocus, [name]: true });
+    activateButton(true);
   };
 
   const onBlur = name => {
@@ -123,25 +123,22 @@ const StepThree = () => {
           autoCorrect={false}
           value={state.accountNumber}
         />
-        <View style={PickerContainer}>
-          <RNPickerSelect
-            items={state.banks}
-            placeholder={{
-              label: 'Select Bank',
-              value: null,
-              color: '#9EA0A4'
-            }}
-            onValueChange={value => {
-              updateState('selectedBank', value);
-            }}
-            style={borderedPickerSelectStyles}
-            value={state.selectedBank}
-            useNativeAndroidPickerStyle
-            placeholderTextColor="#9EA0A4"
-            Icon={() => <FontAwesome name="angle-down" size={20} color="#38b7a2" />}
-          />
-        </View>
-
+        <RNPickerSelect
+          items={state.banks}
+          placeholder={{
+            label: 'Select Bank',
+            value: null,
+            color: '#9EA0A4'
+          }}
+          onValueChange={value => {
+            updateState('selectedBank', value);
+          }}
+          style={borderedPickerSelectStyles}
+          value={state.selectedBank}
+          useNativeAndroidPickerStyle
+          placeholderTextColor="#9EA0A4"
+          Icon={() => <FontAwesome name="angle-down" size={20} color="#38b7a2" />}
+        />
         <Input
           placeholder="Your bank name"
           onChangeText={text => updateState('bankName', text)}
@@ -160,6 +157,10 @@ const StepThree = () => {
       </View>
     </View>
   );
+};
+
+StepThree.propTypes = {
+  activateButton: PropTypes.func.isRequired
 };
 
 export default StepThree;

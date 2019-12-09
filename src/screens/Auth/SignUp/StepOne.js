@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Text, View } from 'react-native';
 import { Input } from 'react-native-elements';
 import DatePickerComponent from '<components>/DatePicker';
 import { getDate } from '<utils>/formats';
 import { StepOneStyles } from './style';
 
-const StepOne = () => {
-  const [state, setState] = useState({});
+const StepOne = ({ setState, state }) => {
   const {
     container,
     headerText,
@@ -16,8 +16,23 @@ const StepOne = () => {
     labelStyle
   } = StepOneStyles;
 
-  const updatePicker = event => {
-    setState(event);
+  const [date, setDate] = useState(null);
+
+  useEffect(() => {
+    return stat => {
+      console.log(date, state.date, stat);
+      // if (date !== state.date) {
+      //   setState({ active: true, date });
+      // }
+    };
+  }, [date]);
+
+  const updatePicker = inputDate => {
+    setDate(inputDate);
+  };
+
+  const onDateChange = async (event, inputDate) => {
+    await setDate(inputDate);
   };
 
   const renderSelectInput = () => {
@@ -26,7 +41,7 @@ const StepOne = () => {
         placeholder="Date of Birth"
         containerStyle={containerStyle}
         disabledInputStyle={labelStyle}
-        value={state.date ? getDate(state.date) : ''}
+        value={date ? getDate(date) : ''}
         disabled
       />
     );
@@ -47,13 +62,21 @@ const StepOne = () => {
         confirmBtnText="Ok"
         style={pickerStyle}
         cancelBtnText="Cancel"
+        onDateChange={onDateChange}
         selectComponent={renderSelectInput}
-        updatePicker={date => {
-          updatePicker(date);
-        }}
+        updatePicker={updatePicker}
       />
     </View>
   );
+};
+
+StepOne.propTypes = {
+  setState: PropTypes.func.isRequired,
+  state: PropTypes.object
+};
+
+StepOne.defaultProps = {
+  state: {}
 };
 
 export default StepOne;

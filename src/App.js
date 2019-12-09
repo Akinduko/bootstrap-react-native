@@ -12,7 +12,6 @@ import SplashScreen from 'react-native-splash-screen';
 import { ApolloProvider } from 'react-apollo';
 import client from '<graphql>';
 import AppContainer from '<navigation>/App';
-import LoaderScreen from '<components>/Loader';
 import NavigationService from '<utils>/NavigationService';
 
 const styles = StyleSheet.create({
@@ -46,8 +45,6 @@ class App extends PureComponent {
               NavigationService.setTopLevelNavigator(navigatorRef);
             }}
           />
-
-          <LoaderScreen />
         </SafeAreaView>
       </ApolloProvider>
     );

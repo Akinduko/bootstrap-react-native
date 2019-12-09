@@ -1,11 +1,12 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 import { Button } from 'react-native-elements';
+import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import OtpInput from '<components>/OtpInput';
 import { StepFourStyles } from './style';
 
-const StepFour = () => {
+const StepFour = ({ activateButton }) => {
   const {
     container,
     buttonStyle,
@@ -19,6 +20,7 @@ const StepFour = () => {
     console.log(code);
     if (code && code.length === 6) {
       console.log('received');
+      activateButton(true);
     }
   };
 
@@ -40,6 +42,10 @@ const StepFour = () => {
       </View>
     </View>
   );
+};
+
+StepFour.propTypes = {
+  activateButton: PropTypes.func.isRequired
 };
 
 export default StepFour;

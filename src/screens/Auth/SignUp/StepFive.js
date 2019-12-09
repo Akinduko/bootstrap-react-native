@@ -1,10 +1,11 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import PropTypes from 'prop-types';
 import { Button } from 'react-native-elements';
 import OtpInput from '<components>/OtpInput';
 import { StepFiveStyles } from './style';
 
-const StepFive = () => {
+const StepFive = ({ activateButton }) => {
   const {
     container,
     buttonStyle,
@@ -21,6 +22,7 @@ const StepFive = () => {
     console.log(code);
     if (code && code.length === 6) {
       console.log('received');
+      activateButton(true);
     }
   };
 
@@ -51,6 +53,10 @@ const StepFive = () => {
       </View>
     </View>
   );
+};
+
+StepFive.propTypes = {
+  activateButton: PropTypes.func.isRequired
 };
 
 export default StepFive;

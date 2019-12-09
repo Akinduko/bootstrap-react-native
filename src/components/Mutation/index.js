@@ -3,6 +3,7 @@ import React from 'react';
 import { Mutation } from 'react-apollo';
 import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
+import Loader from '<components>/Loader';
 
 const MutationContainer = ({ Component, mutation, variables, onCompleted, update }) => {
   return (
@@ -12,12 +13,7 @@ const MutationContainer = ({ Component, mutation, variables, onCompleted, update
       onCompleted={onCompleted}
       update={(store, { data }) => update(store, data)}>
       {({ loading, error, data }) => {
-        if (loading)
-          return (
-            <View>
-              <Text>Fetching</Text>
-            </View>
-          );
+        if (loading) return <Loader loading={loading} />;
         if (error)
           return (
             <View>
@@ -41,9 +37,9 @@ MutationContainer.propTypes = {
 
 MutationContainer.defaultProps = {
   mutation: () => {},
+  update: () => {},
   onCompleted: () => {},
   Component: () => {},
-  update: () => {},
   variables: {}
 };
 

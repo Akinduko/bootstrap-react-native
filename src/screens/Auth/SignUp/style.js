@@ -1,9 +1,9 @@
 import { StyleSheet, Platform } from 'react-native';
 
 export const style = StyleSheet.create({
-  renderStyle: { height: '80%' },
+  renderStyle: { height: '78%' },
   headerStyle: { height: '10%' },
-  footerStyle: { height: '10%' },
+  footerStyle: { height: '12%' },
   container: { height: '100%' },
   previousStyle: {
     backgroundColor: 'white',
@@ -13,8 +13,7 @@ export const style = StyleSheet.create({
   },
   previousContainerStyle: {
     width: 66,
-    justifyContent: 'center',
-    marginHorizontal: '5%'
+    justifyContent: 'center'
   },
   nextStyle: {
     backgroundColor: 'rgb(56,183,162)',
@@ -26,13 +25,13 @@ export const style = StyleSheet.create({
     width: 66,
     justifyContent: 'flex-end',
     alignSelf: 'flex-end',
-    marginHorizontal: '10%'
+    marginHorizontal: '5%'
   }
 });
 
 export const StepOneStyles = StyleSheet.create({
   headerText: {
-    height: '15%',
+    height: '20%',
     textAlign: 'left',
     justifyContent: 'center',
     color: 'rgb(56,183,162)',
@@ -41,7 +40,7 @@ export const StepOneStyles = StyleSheet.create({
     lineHeight: 27
   },
   subHeaderText: {
-    height: '30%',
+    height: '35%',
     textAlign: 'left',
     justifyContent: 'center',
     color: 'rgb(62, 62, 62)',
@@ -49,7 +48,7 @@ export const StepOneStyles = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
     lineHeight: 27
   },
-  container: { paddingHorizontal: '10%', flexDirection: 'column' },
+  container: { paddingHorizontal: '5%', flexDirection: 'column' },
   pickerStyle: { width: '80%' },
   containerStyle: { paddingHorizontal: 0 },
   labelStyle: {
@@ -68,11 +67,12 @@ export const StepTwoStyles = StyleSheet.create({
     textAlign: 'left',
     justifyContent: 'center',
     color: 'rgb(56,183,162)',
+    marginVertical: '5%',
     fontSize: 22,
     fontFamily: 'Roboto-Medium',
     lineHeight: 27
   },
-  container: { paddingHorizontal: '10%', flexDirection: 'column' },
+  container: { paddingHorizontal: '5%', flexDirection: 'column' },
   labelText: {
     textAlign: 'left',
     justifyContent: 'center',
@@ -85,7 +85,7 @@ export const StepTwoStyles = StyleSheet.create({
   checkBoxContainer: {
     flexDirection: 'row'
   },
-  containerStyle: { paddingHorizontal: 0, height: '15%', marginVertical: '1%' },
+  containerStyle: { paddingHorizontal: 0, height: '20%', marginVertical: '1%' },
   checkBoxTextStyle: {
     textAlign: 'left',
     justifyContent: 'center',
@@ -126,9 +126,9 @@ export const StepThreeStyles = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
     lineHeight: 27
   },
-  inputContainer: { height: '70%', justifyContent: 'space-around' },
+  inputContainer: { height: '80%', justifyContent: 'space-between' },
   container: {
-    paddingHorizontal: '10%',
+    paddingHorizontal: '5%',
     height: '100%',
     flexDirection: 'column'
   },
@@ -153,7 +153,11 @@ export const StepThreeStyles = StyleSheet.create({
   checkBoxContainer: {
     flexDirection: 'row'
   },
-  containerStyle: { paddingHorizontal: 0, height: '10%', marginVertical: '1%' },
+  containerStyle: {
+    paddingHorizontal: 0,
+    height: Platform.OS === 'android' ? '15%' : '10%',
+    marginBottom: '5%'
+  },
   checkBoxTextStyle: {
     textAlign: 'left',
     justifyContent: 'center',
@@ -176,14 +180,10 @@ export const StepThreeStyles = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
     lineHeight: 27
   },
-  footerContainer: { height: '10%', justifyContent: 'center' },
+  footerContainer: { height: '10%', justifyContent: 'flex-end' },
   headerContainer: {
     height: '10%',
-    justifyContent: 'center'
-  },
-  PickerContainer: {
-    height: Platform.OS === 'android' ? '15%' : '10%',
-    justifyContent: 'center'
+    justifyContent: 'flex-start'
   }
 });
 
@@ -203,7 +203,7 @@ export const StepFourStyles = StyleSheet.create({
     lineHeight: 27
   },
   headerContainer: {
-    height: '25%',
+    height: '30%',
     justifyContent: 'space-between'
   },
   buttonStyle: {
@@ -216,11 +216,12 @@ export const StepFourStyles = StyleSheet.create({
     flexDirection: 'column'
   },
   container: {
-    paddingHorizontal: '10%',
+    paddingHorizontal: '5%',
     flexDirection: 'column'
   },
   containerStyle: {
-    width: '40%'
+    width: '40%',
+    marginTop: '5%'
   }
 });
 
@@ -263,13 +264,13 @@ export const StepFiveStyles = StyleSheet.create({
     lineHeight: 26
   },
   otpContainer: {
-    height: '10%',
+    height: '15%',
     marginVertical: '5%',
     justifyContent: 'space-around',
     flexDirection: 'column'
   },
   container: {
-    paddingHorizontal: '10%',
+    paddingHorizontal: '5%',
     flexDirection: 'column'
   },
   containerStyle: {
@@ -289,8 +290,8 @@ export const StepSixStyles = StyleSheet.create({
     lineHeight: 27
   },
   headerContainer: {
-    height: '10%',
-    justifyContent: 'center'
+    height: '5%',
+    justifyContent: 'flex-start'
   },
   buttonStyle: {
     backgroundColor: 'rgb(56,183,162)',
@@ -322,7 +323,7 @@ export const StepSixStyles = StyleSheet.create({
     marginVertical: '1%'
   },
   scrollContainer: {
-    height: '65%',
+    height: '85%',
     marginTop: '10%'
   },
   container: {
@@ -337,6 +338,7 @@ export const StepSixStyles = StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     height: '10%',
+    alignItems: 'flex-end',
     justifyContent: 'space-between'
   }
 });
@@ -345,7 +347,9 @@ export const borderedPickerSelectStyles = StyleSheet.create({
   viewContainer: {
     borderBottomWidth: 1,
     borderColor: '#86939e',
-    height: Platform.OS === 'android' ? '50%' : '50%'
+    height: Platform.OS === 'android' ? '15%' : '10%',
+    marginTop: '5%',
+    marginBottom: '5%'
   },
   inputIOS: {
     textAlign: 'left',
@@ -355,10 +359,11 @@ export const borderedPickerSelectStyles = StyleSheet.create({
   },
   inputAndroid: {
     textAlign: 'left',
-    color: 'rgb(56,183,162)',
+    justifyContent: 'center',
     fontSize: 18,
     fontFamily: 'Roboto-Regular',
-    height: '100%'
+    lineHeight: 27,
+    paddingLeft: 0
   },
   iconContainer: {
     justifyContent: 'center',

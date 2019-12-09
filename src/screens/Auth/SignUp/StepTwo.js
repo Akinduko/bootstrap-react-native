@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Text, View } from 'react-native';
 import { Input, CheckBox } from 'react-native-elements';
+import PropTypes from 'prop-types';
 import { StepTwoStyles } from './style';
 
-const StepTwo = () => {
+const StepTwo = ({ activateButton }) => {
   const inputs = {};
   const [state, setState] = useState({
     type: null,
@@ -22,14 +23,17 @@ const StepTwo = () => {
     inputStyle
   } = StepTwoStyles;
 
-  const updateState = (name, value) => {
-    setState({ ...state, [name]: value });
+  const updateState = async (name, value) => {
+    await setState({ ...state, [name]: value });
+    await activateButton(true);
   };
 
   const setInputRef = (fieldName, field) => {
     inputs[fieldName] = field;
   };
+
   const focusOnField = fieldName => inputs[fieldName] && inputs[fieldName].focus();
+
   return (
     <View style={container}>
       <Text style={headerText}>Tell us about yourself</Text>
@@ -82,6 +86,10 @@ const StepTwo = () => {
       </View>
     </View>
   );
+};
+
+StepTwo.propTypes = {
+  activateButton: PropTypes.func.isRequired
 };
 
 export default StepTwo;

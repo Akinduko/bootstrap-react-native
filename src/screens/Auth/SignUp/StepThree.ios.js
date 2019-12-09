@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 import { Input } from 'react-native-elements';
 import RNPickerSelect from 'react-native-picker-select';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-
+import PropTypes from 'prop-types';
 import { StepThreeStyles, borderedPickerSelectStyles } from './style';
 
 const initialFocus = {
@@ -13,7 +13,7 @@ const initialFocus = {
   accountNumber: false,
   email: false
 };
-const StepThree = () => {
+const StepThree = ({ activateButton }) => {
   const inputs = {};
   const [focus, setFocus] = useState(initialFocus);
   const [state, setState] = useState({
@@ -56,6 +56,7 @@ const StepThree = () => {
 
   const updateState = (name, value) => {
     setState({ ...state, [name]: value });
+    activateButton(true);
   };
 
   const onFocus = name => {
@@ -160,6 +161,10 @@ const StepThree = () => {
       </View>
     </View>
   );
+};
+
+StepThree.propTypes = {
+  activateButton: PropTypes.func.isRequired
 };
 
 export default StepThree;

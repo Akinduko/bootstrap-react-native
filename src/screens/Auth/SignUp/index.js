@@ -13,8 +13,8 @@ import StepSix from '<screens>/Auth/SignUp/StepSix';
 import { style } from './style';
 
 const SignUp = () => {
-  const [state, setState] = useState({});
-  const [level, changeLevel] = useState(1);
+  const [state, setState] = useState({ level: 1, active: false });
+
   const {
     previousStyle,
     renderStyle,
@@ -25,39 +25,70 @@ const SignUp = () => {
     headerStyle,
     footerStyle
   } = style;
+  const changePageLevel = async level => {
+    await setState({ ...state, level, active: false });
+  };
+
+  const setData = data => {
+    console.log({ ...state, ...data });
+    setState({ ...state, ...data });
+  };
 
   const RenderPage = () => {
-    const changePageLevel = data => {
-      setState({ ...state, data });
-    };
-    switch (level) {
+    switch (state.level) {
       case 1:
-        return <StepOne changeLevel={data => changePageLevel(data)} />;
+        return <StepOne setState={data => setData(data)} data={state} />;
       case 2:
-        return <StepTwo changeLevel={data => changePageLevel(data)} />;
+        return (
+          <StepTwo
+            setState={data => setData(data)}
+            changePageLevel={data => changePageLevel(data)}
+          />
+        );
       case 3:
         return Platform.OS === 'ios' ? (
-          <StepThreeIos changeLevel={data => changePageLevel(data)} />
+          <StepThreeIos
+            setState={data => setData(data)}
+            changePageLevel={data => changePageLevel(data)}
+          />
         ) : (
-          <StepThreeAndroid changeLevel={data => changePageLevel(data)} />
+          <StepThreeAndroid
+            setState={data => setData(data)}
+            changePageLevel={data => changePageLevel(data)}
+          />
         );
       case 4:
-        return <StepFour changeLevel={data => changePageLevel(data)} />;
+        return (
+          <StepFour
+            setState={data => setData(data)}
+            changePageLevel={data => changePageLevel(data)}
+          />
+        );
       case 5:
-        return <StepFive changeLevel={data => changePageLevel(data)} />;
+        return (
+          <StepFive
+            setState={data => setData(data)}
+            changePageLevel={data => changePageLevel(data)}
+          />
+        );
       case 6:
-        return <StepSix changeLevel={data => changePageLevel(data)} />;
+        return <StepSix setState={data => setData(data)} />;
       default:
-        return <StepOne changeLevel={data => changePageLevel(data)} />;
+        return (
+          <StepOne
+            setState={data => setData(data)}
+            changePageLevel={data => changePageLevel(data)}
+          />
+        );
     }
   };
 
   return (
     <View style={container}>
       <View style={headerStyle}>
-        {level !== 1 && level !== 6 ? (
+        {state.level !== 1 && state.level !== 6 ? (
           <Button
-            onPress={() => changeLevel(+level - 1)}
+            onPress={() => changePageLevel(+state.level - 1)}
             buttonStyle={previousStyle}
             containerStyle={previousContainerStyle}
             icon={<AntDesign name="arrowleft" size={30} color="rgb( 56 ,183 ,162)" />}
@@ -68,10 +99,11 @@ const SignUp = () => {
         <RenderPage />
       </View>
       <View style={footerStyle}>
-        {level !== 6 ? (
+        {state.level !== 6 ? (
           <Button
-            onPress={() => changeLevel(+level + 1)}
+            onPress={() => changePageLevel(+state.level + 1)}
             buttonStyle={nextStyle}
+            disabled={!state.active}
             containerStyle={nextContainerStyle}
             icon={<Ionicons name="ios-arrow-forward" size={30} color="white" />}
           />
